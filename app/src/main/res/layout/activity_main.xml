@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            tools:ignore="HardcodedText"
+            tools:context=".MainActivity">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/creating_and_replacing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#674FA3"
+                android:text="Creating and replacing"
+                android:textSize="20sp"
+                android:fontFamily="@font/roboto_mono"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                >
+            </androidx.appcompat.widget.AppCompatButton>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btToNavigationComponent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#674FA3"
+                android:text="Trivia"
+                android:textSize="20sp"
+                android:fontFamily="@font/roboto_mono"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                >
+            </androidx.appcompat.widget.AppCompatButton>
+        </LinearLayout>
+    </ScrollView>
+</layout>

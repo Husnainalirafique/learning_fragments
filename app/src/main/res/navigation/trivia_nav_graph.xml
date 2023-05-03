@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/trivia_nav_graph"
+    app:startDestination="@id/triviaHomeFragment">
+    <fragment
+        android:id="@+id/triviaHomeFragment"
+        android:name="com.example.fragments.trivia.fragments.TriviaHomeFragment"
+        android:label="fragment_trivia_home"
+        tools:layout="@layout/fragment_trivia_home" >
+        />
+        <action
+            android:id="@+id/action_triviaHomeFragment_to_quizFragment"
+            app:destination="@id/quizFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/quizFragment"
+        android:name="com.example.fragments.trivia.fragments.QuizFragment"
+        android:label="fragment_quiz"
+        tools:layout="@layout/fragment_quiz" >
+        <action
+            android:id="@+id/action_quizFragment_to_youWin"
+            app:destination="@id/youWin"
+            app:popUpTo="@id/quizFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_quizFragment_to_tryAgain"
+            app:destination="@id/tryAgain"
+            app:popUpTo="@id/quizFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/youWin"
+        android:name="com.example.fragments.trivia.fragments.YouWin"
+        android:label="YouWin"
+        tools:layout="@layout/fragment_you_win"
+        >
+    </fragment>
+    <fragment
+        android:id="@+id/tryAgain"
+        android:name="com.example.fragments.trivia.fragments.TryAgain"
+        tools:layout="@layout/fragment_try_again"
+        android:label="TryAgain" />
+</navigation>
