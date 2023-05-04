@@ -29,7 +29,7 @@
             android:layout_marginTop="70dp"
             android:backgroundTint="@color/initial"
             android:fontFamily="@font/roboto_mono"
-            android:text="Play Again"
+            android:text="Play Agai"
             android:textColor="@color/white"
             android:textSize="20sp" />
     </LinearLayout>
