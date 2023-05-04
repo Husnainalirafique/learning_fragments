@@ -6,6 +6,7 @@ import android.os.Bundle
 import androidx.core.content.ContextCompat
 import androidx.databinding.DataBindingUtil
 import com.example.fragments.databinding.ActivityMainBinding
+import com.example.fragments.start.CreatingAndReplacing
 import com.example.fragments.trivia.Trivia
 
 class MainActivity : AppCompatActivity() {

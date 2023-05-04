@@ -16,7 +16,7 @@
             android:name=".trivia.Trivia"
             android:exported="false" />
         <activity
-            android:name=".CreatingAndReplacing"
+            android:name=".start.CreatingAndReplacing"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

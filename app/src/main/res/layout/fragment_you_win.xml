@@ -10,14 +10,27 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
+        android:orientation="vertical"
         tools:context=".trivia.fragments.YouWin">
 
         <ImageView
+            android:id="@+id/youWin"
             android:layout_width="match_parent"
             android:layout_height="400dp"
             android:src="@drawable/you_win"
             android:layout_marginHorizontal="40dp"
 
             />
+        <Button
+            android:id="@+id/trivia_quiz_play_again"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="70dp"
+            android:backgroundTint="@color/initial"
+            android:fontFamily="@font/roboto_mono"
+            android:text="Play Again"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
     </LinearLayout>
 </layout>

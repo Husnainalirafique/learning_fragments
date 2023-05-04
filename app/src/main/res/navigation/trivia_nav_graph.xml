@@ -12,7 +12,8 @@
         />
         <action
             android:id="@+id/action_triviaHomeFragment_to_quizFragment"
-            app:destination="@id/quizFragment" />
+            app:destination="@id/quizFragment"
+            app:popUpTo="@id/triviaHomeFragment" />
     </fragment>
     <fragment
         android:id="@+id/quizFragment"
@@ -22,13 +23,13 @@
         <action
             android:id="@+id/action_quizFragment_to_youWin"
             app:destination="@id/youWin"
-            app:popUpTo="@id/quizFragment"
-            app:popUpToInclusive="true" />
+            app:popUpTo="@id/triviaHomeFragment"
+            app:popUpToInclusive="false" />
         <action
             android:id="@+id/action_quizFragment_to_tryAgain"
             app:destination="@id/tryAgain"
             app:popUpTo="@id/quizFragment"
-            app:popUpToInclusive="true" />
+            app:popUpToInclusive="false" />
     </fragment>
     <fragment
         android:id="@+id/youWin"
@@ -36,10 +37,23 @@
         android:label="YouWin"
         tools:layout="@layout/fragment_you_win"
         >
+        />
+         />
+        <action
+            android:id="@+id/action_youWin_to_triviaHomeFragment2"
+            app:destination="@id/triviaHomeFragment"
+            app:popUpTo="@id/triviaHomeFragment"
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/tryAgain"
         android:name="com.example.fragments.trivia.fragments.TryAgain"
         tools:layout="@layout/fragment_try_again"
-        android:label="TryAgain" />
+        android:label="TryAgain" >
+        <action
+            android:id="@+id/action_tryAgain_to_quizFragment"
+            app:destination="@id/quizFragment"
+            app:popUpTo="@id/quizFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
 </navigation>

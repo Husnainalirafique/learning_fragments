@@ -1,9 +1,10 @@
-package com.example.fragments
+package com.example.fragments.start
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
+import com.example.fragments.R
 import com.example.fragments.databinding.ActivityCreatingAndReplacingBinding
 import com.example.fragments.fragments.Fragment1
 import com.example.fragments.fragments.Fragment2

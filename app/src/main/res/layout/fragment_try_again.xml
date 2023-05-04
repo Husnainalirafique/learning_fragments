@@ -13,6 +13,7 @@
         tools:context=".trivia.fragments.TryAgain">
 
         <ImageView
+            android:id="@+id/tryAgain"
             android:layout_width="match_parent"
             android:layout_height="300dp"
             android:src="@drawable/try_again"
