@@ -17,6 +17,7 @@
             android:id="@+id/youWin"
             android:layout_width="match_parent"
             android:layout_height="400dp"
+            android:contentDescription="@null"
             android:src="@drawable/you_win"
             android:layout_marginHorizontal="40dp"
 
@@ -29,7 +30,7 @@
             android:layout_marginTop="70dp"
             android:backgroundTint="@color/initial"
             android:fontFamily="@font/roboto_mono"
-            android:text="Play Agai"
+            android:text="Play Again"
             android:textColor="@color/white"
             android:textSize="20sp" />
     </LinearLayout>
